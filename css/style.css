@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.starter{
+    height: 650px;
+    width: 100%;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+.starter h2{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.logo{
+    color: #fff;
+}
+.logo span{
+    color: #3434cd;
+}
+nav ul{}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition-duration: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #3434cd;
+}
+
+nav a{
+    text-decoration: none;
+}
+.btn{
+    background: blue;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.btn:hover{
+    background: transparent;
+    border: 2px solid blue;
+    border-radius: 30px;
+}
+
+.content{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.content h4{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.content h1{
+    font-size: 65px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.content span{
+    color: #3434cd;
+}
+.content h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.content .newsletter{}
+.newsletter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+.newsletter form input:first-child{
+    display: inline-block;
+    padding: 24px 60px 20px 100px;
+    margin: 10px 0 10px;
+    border: 2px solid #3b3b78;
+    outline: none;
+    font-size: 16px;
+    border-radius: 30px;
+    font-size: 18px;
+    text-align: left;
+}
+.newsletter form input:last-child{
+    position: absolute;
+    outline: none;
+    display: inline-block;
+    border: none;
+    background: #3434cd;
+    color: #fff;
+    padding: 15px 25px 14px 25px;
+    border-radius: 30px;
+    top: 18px;
+    font-weight: 700;
+    font-size: 18px;
+    right: 6px;
+    margin-right: 5px;
+    transition-duration: 0.3s;
+    box-shadow: 3px 3px #0000ff3d;
+}
+
+.newsletter form input:last-child:hover{
+    background: transparent;
+    color: #3434cd;
+    outline: none;
+    border-radius: 30px;
+    border: #3434cd;
+}
+
+/** about section **/
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #0e0d0d;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main img{
+    height: auto;
+    width: 400px;
+}
+.about-text{
+    width: 550px;
+}
+.about-text h2{
+    font-size: 60px;
+    font-weight: bolder;
+    color: #3434cd;
+}
+.about-text p{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    color: #fff;
+}
+button{
+    background: #3434cd;
+    color: #fff;
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 15px 25px 15px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    outline: 0;
+    border: 0;
+    transition-duration: 0.3s;
+}
+
+button:hover{
+    border: 2px solid #3434cd;
+    background: transparent;
+}
+/** about section **/
+
+/** service section **/
+.service{
+    width: 100%;
+    background: #101010;
+    padding: 100px 0;
+}
+.title{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.title h2{
+    color: #fff;
+    margin: 30px auto;
+    width: 1130px;
+    font-size: 75px;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.box .card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 12px 12px 2px 1px rgb(0 0 0 / 20%);
+}
+.card h5{
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.card i{
+    font-size: 40px;
+    color: #3434cd;
+    margin-bottom: 15px;
+}
+.pra{
+}
+.pra p{
+    font-size: 15px;
+    color: #bdb9b9;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+.button{
+    text-decoration: none;
+    background: #3434cd;
+    color: #fff;
+    outline: 0;
+    border: 0;
+    border: 2px solid #3434cd;
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    transition-duration: 0.3s;
+}
+.button:hover{
+    background: transparent;
+}
+/** service section **/
+
+/** hire me **/
+.hire-me{
+    background: #191919;
+    width: 100%;
+    padding: 60px 0;
+}
+.job{
+    text-align: center;
+}
+.job h2{
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 24px;
+    font-family: cursive;
+}
+/** hire me **/
+/** footer section **/
+footer{
+    position: relative;
+    height: auto;
+    padding: 100px 0;
+    background: #191818;
+}
+footer .last-part{text-align: center;}
+.last-part h4{
+    font-size: 23px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.last-part h4 span{
+    color: #3434cd;
+}
+.last-part p{
+    color: #b5acac;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.social-media{}
+.social-media .social-icon{}
+.social-icon i{
+    font-size: 25px;
+    color: #fff;
+    padding: 14px 10px 0px 20px;
+    cursor: pointer;
+}
+.social-icon i:hover{
+    color: #3434cd;
+}
+/** footer section **/
